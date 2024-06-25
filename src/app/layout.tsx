@@ -1,10 +1,16 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import Navbar from "@/Components/Common/Navbar";
 
-const inter = Inter({ subsets: ["latin"] });
+
+
+const PoppinsFont = Poppins({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400","500", "600"],
+});
 
 export const metadata: Metadata = {
   title: "Dobby",
@@ -19,7 +25,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       
-      <body className={inter.className}>{children}</body>
+      <body className={PoppinsFont.className}>
+      <Navbar />
+        {children}
+        </body>
+      
     </html>
   );
 }
