@@ -9,13 +9,13 @@ import { motion } from "framer-motion";
 const HomeText = () => {
 
   return (
-    <div className="flex flex-col lg:items-end md:w-1/2">
+    <div className="flex flex-col md:items-end md:w-1/2">
       <div>
-      <Heading content="Book a Wash, " classNames="mt-3 h-12 md:h-16"/>
+      <Heading content="Book a Wash," classNames="mt-3 h-12 md:h-16"/>
       <div className="flex h-12 md:h-16">  
         <Heading content="Get a Instant" />
         <motion.span
-          className="ml-2 text-4xl md:text-5xl text-blue-500 font-semibold"
+          className="ml-2 text-4xl lg:text-5xl text-blue-500 font-semibold"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}

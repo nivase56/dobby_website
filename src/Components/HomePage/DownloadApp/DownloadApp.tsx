@@ -8,14 +8,14 @@ import ContentTag from "../../Common/ContentTag";
 const DownloadApp = () => {
   return (
     <div className="md:flex">
-      <div className="md:w-1/2">
+      <div className="lg:w-1/2">
         <Image
           src={triangle}
           alt="triangle"
           className="absolute"
           height={480}
         />
-        <div className="relative py-20 px-8 md:px-48">
+        <div className="relative py-20 px-8 md:px-4 lg:px-48">
         
               
           <ContentTag content="DOWNLOAD" classNames="pb-4" />

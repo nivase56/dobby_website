@@ -32,7 +32,7 @@ const navLinks = [
 
 const Footer = () => {
   return (
-    <div className="grid grid-cols-2 gap-4 md:grid-cols-9 lg:grid-cols-11 bg-[#051C34] pl-3 py-5 md:p-20">
+    <div className="grid grid-cols-2 gap-4 md:grid-cols-9 lg:grid-cols-11 bg-[#051C34] pl-3 py-5 lg:p-20">
       <div className="grid col-span-3">
         <Image
           src={whitelogo}
@@ -46,7 +46,7 @@ const Footer = () => {
         </h5>
       </div>
       {navLinks.map((nav, index) => (
-        <div key={index} className={`text-gray-400 grid ${index === 0 || index === 2 ? `col-span-2`: ``} lg:col-span-2`}>
+        <div key={index} className={`text-gray-400 grid ${index === 0 || index === 2 ? `col-span-2`: ``} md:col-span-2`}>
           <h2 className="text-xl font-semibold text-white pb-2">{nav.title}</h2>
           <div className="flex flex-col gap-2 text-sm">
             {nav.links.map((link, i) => (
@@ -56,7 +56,7 @@ const Footer = () => {
         </div>
       ))}
       <div className="text-gray-400  space-y-2">
-        <h2 className="text-xl font-semibold text-white pb-2">Follow Us</h2>
+        <h2 className="text-xl font-semibold text-white pb-2 w-28">Follow Us</h2>
         <div className="grid lg:col-span-2">
           <div className="flex gap-2 items-center mb-2">
             <IconComponent

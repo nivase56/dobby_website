@@ -45,10 +45,10 @@ const OfferContainer = () => {
         <Image src={audirs} alt="audirs" width={630} quality={100}/>
         </motion.div>
       </div>
-      <div className="px-10 flex flex-col items-center md:block"> 
+      <div className="sm:px-10 md:px-2 lg:px-10 flex flex-col items-center md:w-1/2 md:block"> 
         <ContentTag content="WHY CHOOSE US" />
         <div>
-          <h1 className="text-4xl w-full font-medium md:w-2/3 my-8">
+          <h1 className="text-4xl md:text-3xl w-full font-medium lg:w-2/3 my-8">
             We offer the best experience with washing service
           </h1>
         </div>

@@ -67,13 +67,14 @@ const Navbar = () => {
         </motion.div>
       ) : (
         <motion.div
-          className="fixed fixed-navbar top-0 left-0 right-0 flex p-4 items-center justify-center gap-8 bg-transparent w-[70%] rounded-full ml-auto mr-auto bg-white bg-opacity-20 backdrop-blur-lg drop-shadow-lg"
+          className="fixed fixed-navbar top-0 left-0 right-0 flex p-4 items-center justify-center gap-8 bg-transparent md:w-[95%] lg:w-[70%]
+            rounded-full ml-auto mr-auto bg-white bg-opacity-20 backdrop-blur-lg drop-shadow-lg"
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <Image src={logo} alt="logo" className="w-44 h-9 px-3" />
-          <div className="flex items-center gap-6 mr-3 text-sm">
+          <Image src={logo} alt="logo" className="md:w-40 lg:w-44 h-9 px-3" />
+          <div className="flex items-center md:gap-3 lg:gap-6 md:mr-0 lg:mr-3 text-sm">
             <p>Live Offers</p>
             <p>Pricing</p>
             <p>Blog</p>

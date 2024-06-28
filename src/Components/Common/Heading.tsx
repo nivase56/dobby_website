@@ -24,7 +24,7 @@ const Heading = ({content, classNames} : any) => {
   return (
 
     <motion.h1 initial="hidden" animate="visible" variants={sentence} 
-    className={`text-4xl md:text-5xl font-semibold block ${classNames}`} >
+    className={`text-4xl md:text-4xl lg:text-5xl font-semibold block ${classNames}`} >
         {content.split("").map((char: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | MotionValue<number> | MotionValue<string> | null | undefined, index: React.Key | null | undefined) => (
           <motion.span key={index} variants={letter}>
             {char}

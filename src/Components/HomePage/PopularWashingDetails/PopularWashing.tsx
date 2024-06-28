@@ -74,7 +74,7 @@ const PopularWashing = () => {
         </h1>
       </div>
 
-      <div className="md:flex items-center justify-center">
+      <div className="lg:flex items-center justify-center">
         {carData.map((car, index) => (
           <PopularWashingCard key={index} data={car} />
         ))}

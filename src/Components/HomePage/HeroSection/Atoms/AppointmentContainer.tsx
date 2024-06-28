@@ -61,7 +61,7 @@ const AppointmentContainer: React.FC = () => {
       transition={{ duration: 0.8, ease: "easeOut" }}
       onClick={handleClick}
     >
-      <div className="box_Shadow flex flex-col gap-1 md:gap-0 p-4 md:flex md:flex-row md:justify-evenly md:p-0 bg-white md:w-[70%] ml-auto mr-auto rounded-lg">
+      <div className="box_Shadow flex flex-col gap-1 md:gap-0 p-4 md:flex md:flex-row md:justify-evenly md:p-0 bg-white lg:w-[70%] ml-auto mr-auto rounded-lg">
         <div className="flex items-center gap-3 location-container">
           <IconComponent
             icon="hugeicons:location-06"

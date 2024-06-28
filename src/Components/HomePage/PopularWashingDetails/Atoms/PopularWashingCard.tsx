@@ -4,7 +4,7 @@ import IconComponent from "@/Components/Common/IconComponent";
 
 const PopularWashingCard = ({ data }: any) => {
   return (
-    <div className="border rounded-lg w-[90%] mr-auto ml-auto md:w-[20%] md:mx-5 md:p-3 my-8 p-5 flex flex-col items-center justify-center">
+    <div className="border rounded-lg w-[90%] md:w-[95%] lg:w-[20%] mr-auto ml-auto md:mx-5 md:p-3 my-8 p-5 flex flex-col items-center justify-center">
       <Image
         src={data.imgsrc}
         alt={data.name}

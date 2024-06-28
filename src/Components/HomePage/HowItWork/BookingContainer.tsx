@@ -36,7 +36,7 @@ const CarouselComponent = () => {
     <div className="carousel-container overflow-hidden md:my-10">
       <Carousel autoplay autoplaySpeed={6000} dots={false} infinite speed={6000} slidesToShow={5} slidesToScroll={5} >
         {images.map((image, index) => (
-          <div key={index} className="h-[50px] object-cover md:h-auto">
+          <div key={index} className="h-[50px] object-cover md:h-[100px]">
             <Image src={image} alt={`car-${index}`} height={150} width={150} className="p-2" />
           </div>
         ))}
@@ -55,14 +55,14 @@ const BookingContainer = () => {
         </div>
         <div className="my-10 md:flex justify-center gap-20">
           {steps.map((step, index) => (
-            <div key={index} className="w-full py-3 md:w-[14%] flex items-center flex-col">
+            <div key={index} className="w-full py-3 md:w-[25%] flex items-center flex-col">
               <div className="rounded-lg shadow-lg flex items-center justify-center h-24 bg-blue-100 w-24 mb-3">
                 <IconComponent
                   icon={step.icon}
                   className="text-primary h-10 w-10 text-blue-500"
                 />
               </div>
-              <p className="font-semibold text-xl py-2">{step.title}</p>
+              <p className="font-semibold md:text-lg lg:text-xl py-2">{step.title}</p>
               <p className="text-center text-sm">{step.description}</p>
             </div>
           ))}
